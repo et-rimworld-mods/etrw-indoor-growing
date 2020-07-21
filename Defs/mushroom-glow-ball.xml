@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="CavePlantBase">
+        <defName>GlowBall</defName>
+        <label>glow-ball</label>
+        <description>A genetically-engineered glowing fungus, invented to keep mine-workers from going insane.</description>
+        <statBases>
+            <MaxHitPoints>10</MaxHitPoints>
+            <Beauty>10</Beauty>
+            <Nutrition>0.01</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Drug/Ambrosia</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>7</pathCost>
+        <ingestible/>
+        <plant>
+            <cavePlant>true</cavePlant> <!-- ?!? -->
+            <fertilityMin>0.01</fertilityMin>
+            <fertilitySensitivity>0.15</fertilitySensitivity>
+            <sowTags>
+                <li>Decorative</li> <!-- WHY ISN'T THIS ENOUGH?!?!?! -->
+            </sowTags>
+            <growDays>20</growDays>
+            <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays> <!-- roses and daylilies have this...? -->
+            <dieIfLeafless>true</dieIfLeafless>
+            <visualSizeRange>0.2~1.0</visualSizeRange>
+            <topWindExposure>0.03</topWindExposure>
+            <purpose>Beauty</purpose>
+        </plant>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>7</glowRadius>
+                <glowColor>(5,5,25,0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>
