@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>ET's Indoor Growing</name>
+    <author>Elia Tarasoff</author>
+    <packageId>EliaTarasoff.IndoorGrowing</packageId>
+    <url>https://github.com/et-rimworld-mods/etrw-indoor-growing</url>
+    <supportedVersions>
+        <li>1.1</li>
+    </supportedVersions>
+    <description>See the README.md and LICENSE files.</description>
+</ModMetaData>
