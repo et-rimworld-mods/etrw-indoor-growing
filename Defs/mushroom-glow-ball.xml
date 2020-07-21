@@ -2,17 +2,22 @@
 <Defs>
     <ThingDef ParentName="CavePlantBase">
         <defName>GlowBall</defName>
+
         <label>glow-ball</label>
         <description>A genetically-engineered glowing fungus, invented to keep mine-workers from going insane.</description>
+
+        <graphicData>
+            <texPath>GlowBallBlurredAndDark</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <uiIconScale>2.0</uiIconScale>
+        <altitudeLayer>Item</altitudeLayer> <!-- so it's on top of the plant-pot -->
+
         <statBases>
             <MaxHitPoints>10</MaxHitPoints>
             <Beauty>10</Beauty>
             <Nutrition>0.01</Nutrition>
         </statBases>
-        <graphicData>
-            <texPath>Things/Item/Drug/Ambrosia</texPath>
-            <graphicClass>Graphic_Random</graphicClass>
-        </graphicData>
         <selectable>true</selectable>
         <pathCost>7</pathCost>
         <ingestible/>
@@ -21,19 +26,20 @@
             <fertilityMin>0.01</fertilityMin>
             <fertilitySensitivity>0.15</fertilitySensitivity>
             <sowTags>
-                <li>Decorative</li> <!-- WHY ISN'T THIS ENOUGH?!?!?! -->
+                <li>Decorative</li>
             </sowTags>
             <growDays>20</growDays>
             <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays> <!-- roses and daylilies have this...? -->
             <dieIfLeafless>true</dieIfLeafless>
-            <visualSizeRange>0.2~1.0</visualSizeRange>
+            <visualSizeRange>0.5~0.9</visualSizeRange> <!-- also used in menu? -->
+            <maxMeshCount>1</maxMeshCount> <!-- this affects the number of things per square; e.g. haygrass has more than one "plant" visible when growing -->
             <topWindExposure>0.03</topWindExposure>
             <purpose>Beauty</purpose>
         </plant>
         <comps>
             <li Class="CompProperties_Glower">
                 <glowRadius>7</glowRadius>
-                <glowColor>(5,5,25,0)</glowColor>
+                <glowColor>(5,5,50,0)</glowColor>
             </li>
         </comps>
     </ThingDef>
