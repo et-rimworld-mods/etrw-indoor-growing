@@ -14,3 +14,6 @@ A Rimworld mod, for indoor plant-growing.
     - this is a one-time puzzle / new-person trap
         - not fun after the first time
         - rice / berries / healroot / etc offer long-term trade-offs
+        
+## Hay-Grass in Hydroponics
+- replaces potatoes
