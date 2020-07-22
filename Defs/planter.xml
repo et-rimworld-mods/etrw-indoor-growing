@@ -24,15 +24,12 @@
         <constructEffect>ConstructWood</constructEffect>
 
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-        <!--
         <stuffCategories>
+            <li>Metallic</li>
             <li>Woody</li>
+            <li>Stony</li>
         </stuffCategories>
         <costStuffCount>600</costStuffCount>
-        -->
-        <costList>
-            <WoodLog>600</WoodLog>
-        </costList>
         <canOverlapZones>false</canOverlapZones>
         <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
         <researchPrerequisites>
