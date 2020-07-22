@@ -23,7 +23,7 @@
             <cavePlant>true</cavePlant> <!-- ?!? -->
             <growOptimalGlow/> <!-- so they don't die from each others' light...allows placing many in same room...good? -->
             <fertilityMin>0.01</fertilityMin>
-            <fertilitySensitivity>0.15</fertilitySensitivity>
+            <fertilitySensitivity>0.0</fertilitySensitivity>
             <sowTags>
                 <li>Decorative</li>
             </sowTags>
