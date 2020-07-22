@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="CavePlantBase">
-        <defName>GlowBall</defName>
-
-        <label>glow-ball</label>
+    <ThingDef Name="GlowBallBase" ParentName="CavePlantBase" Abstract="True">
         <description>A genetically-engineered glowing fungus, invented to keep mine-workers from going insane.</description>
 
         <graphicData>
@@ -15,7 +12,7 @@
 
         <statBases>
             <MaxHitPoints>10</MaxHitPoints>
-            <Beauty>10</Beauty>
+            <Beauty>30</Beauty> <!-- rose 14, daylily 18, (normal) small statue 50, (normal) large statue 100  -->
             <Nutrition>0.01</Nutrition>
         </statBases>
         <selectable>true</selectable>
@@ -23,6 +20,7 @@
         <ingestible/>
         <plant>
             <cavePlant>true</cavePlant> <!-- ?!? -->
+            <growOptimalGlow/> <!-- so they don't die from each others' light...allows placing many in same room...good? -->
             <fertilityMin>0.01</fertilityMin>
             <fertilitySensitivity>0.15</fertilitySensitivity>
             <sowTags>
@@ -36,10 +34,54 @@
             <topWindExposure>0.03</topWindExposure>
             <purpose>Beauty</purpose>
         </plant>
+    </ThingDef>
+
+    <!--
+    glowColor values:
+        - (red, green, blue, ?!?)
+        - color
+            - seems to max out at radius, around 1000?
+            - higher than around 1000 seems to mess with the graphics so it's not a circle anymore (cross-shaped glow)
+        - fourth value
+            - 0 means they all add glow
+            - higher than about 50 makes the glows start over-writing other colors
+            - about 200 will be solid your-color, obliterating other sprite-colors?
+    -->
+    <ThingDef ParentName="GlowBallBase">
+        <defName>GlowBallRed</defName>
+
+        <label>glow-ball (red)</label>
+
         <comps>
             <li Class="CompProperties_Glower">
-                <glowRadius>7</glowRadius>
-                <glowColor>(5,5,50,0)</glowColor>
+                <glowRadius>3</glowRadius>
+                <glowColor>(1000, 0, 0, 0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="GlowBallBase">
+        <defName>GlowBallGreen</defName>
+
+        <label>glow-ball (green)</label>
+
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(0, 1000, 0, 0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="GlowBallBase">
+        <defName>GlowBallBlue</defName>
+
+        <label>glow-ball (blue)</label>
+
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(0, 0, 1000, 0)</glowColor>
             </li>
         </comps>
     </ThingDef>
