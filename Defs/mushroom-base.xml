@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="ETMushroomsBase" ParentName="CavePlantBase" Abstract="True">
+        <statBases>
+            <Nutrition>0.01</Nutrition> <!-- somewhere in the inheritance, this is RawBad food-preferability, which needs > 0 -->
+        </statBases>
+        <selectable>true</selectable>
+        <ingestible/>
+        <plant>
+            <!--
+            this doesn't seem to make it have the "dies if exposed to light" message when selecting the grow-plant...
+            but the sowing *is* blocked, and the plants do seem to take damage
+            -->
+            <cavePlant>true</cavePlant>
+            <growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
+
+            <dieIfLeafless>true</dieIfLeafless> <!-- false would be like cocoa-trees which don't die? -->
+        </plant>
+    </ThingDef>
+</Defs>

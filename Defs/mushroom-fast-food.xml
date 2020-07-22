@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="CavePlantBase">
+    <ThingDef ParentName="ETMushroomsBase">
         <defName>Greystool</defName>
 
         <label>greystool</label>
-        <description>A variant of glowstool, cultivated for faster food production. It smells just as bad, but no longer glows.</description>
+        <description>A variant of glowstool, cultivated for faster food production. It smells just as bad, but no longer glows. It still requires a dark environment.</description>
 
         <graphicData>
             <texPath>Things/Plant/Glowstool</texPath>
@@ -14,12 +14,9 @@
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <Beauty>-2</Beauty>
-            <Nutrition>0.01</Nutrition> <!-- somewhere in the inheritance, this is RawBad food-preferability, which needs > 0 -->
         </statBases>
-        <selectable>true</selectable>
         <neverMultiSelect>false</neverMultiSelect>
         <pathCost>10</pathCost>
-        <ingestible/>
         <plant>
             <visualSizeRange>0.4~0.7</visualSizeRange>
             <maxMeshCount>4</maxMeshCount>
@@ -37,7 +34,6 @@
             <harvestYield>20</harvestYield>
             <harvestedThingDef>RawFungus</harvestedThingDef>
             <harvestTag>Standard</harvestTag>
-            <dieIfLeafless>true</dieIfLeafless>
             <topWindExposure>0.05</topWindExposure>
             <wildClusterRadius>3</wildClusterRadius>
             <wildClusterWeight>5</wildClusterWeight>
