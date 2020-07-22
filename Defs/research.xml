@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ResearchTabDef>
+		<defName>Fungi</defName>
+		<label>Fungi</label>
+	</ResearchTabDef>
+
+
+    <ResearchProjectDef>
+        <defName>MushroomsEdibleBasic</defName>
+        <label>food-grade mushrooms</label>
+        <description>Learn how to grow food-grade mushrooms.</description>
+        <tab>Fungi</tab>
+        <researchViewX>0</researchViewX>
+        <researchViewY>0</researchViewY>
+
+        <baseCost>400</baseCost>
+        <techLevel>Neolithic</techLevel>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>MushroomsEdibleFast</defName>
+        <label>fast-growing mushrooms</label>
+        <description>Culture faster-growing mushrooms, to increase food production.</description>
+        <tab>Fungi</tab>
+        <researchViewX>1</researchViewX>
+        <researchViewY>0</researchViewY>
+
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>MushroomsEdibleBasic</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+
+    <ResearchProjectDef>
+        <defName>GlowBalls</defName>
+        <label>glow-balls</label>
+        <description>Grow beautiful glowing fungi in pots!</description>
+        <tab>Fungi</tab>
+        <researchViewX>0</researchViewX>
+        <researchViewY>1</researchViewY>
+
+        <baseCost>600</baseCost>
+        <techLevel>Neolithic</techLevel>
+    </ResearchProjectDef>
+</Defs>
