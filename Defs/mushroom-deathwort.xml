@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="ETMushroomsBase">
-        <defName>Rotwort</defName>
+        <defName>Deathwort</defName>
 
-        <label>rotwort</label>
+        <label>deathwort</label>
         <description>A mushroom variant, cultivated for vivid blacks and reds, reminding the viewer of death and war. For those people who want that sort of thing.</description>
 
         <graphicData>
