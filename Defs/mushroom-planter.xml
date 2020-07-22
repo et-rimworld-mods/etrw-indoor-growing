@@ -45,6 +45,7 @@
             <Flammability>0.3</Flammability>
             <Cleanliness>-30</Cleanliness>
         </statBases>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <thingClass>Building_PlantGrower</thingClass>
         <fertility>1.0</fertility> <!-- hydro. is 2.8, soil is 1.0, mushrooms' min is 0.01 -->
         <building>
