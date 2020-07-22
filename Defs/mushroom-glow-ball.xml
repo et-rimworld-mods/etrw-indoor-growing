@@ -14,12 +14,15 @@
         <statBases>
             <MaxHitPoints>10</MaxHitPoints>
             <Beauty>30</Beauty> <!-- rose 14, daylily 18, (normal) small statue 50, (normal) large statue 100  -->
-            <Nutrition>0.01</Nutrition>
+            <Nutrition>0.01</Nutrition> <!-- somewhere in the inheritance, this is RawBad food-preferability, which needs > 0 -->
         </statBases>
         <selectable>true</selectable>
         <pathCost>7</pathCost>
         <ingestible/>
         <plant>
+            <visualSizeRange>0.5~0.9</visualSizeRange> <!-- also used in menu? -->
+            <maxMeshCount>1</maxMeshCount> <!-- this affects the number of things per square; e.g. haygrass has more than one "plant" visible when growing; roses have 1, go into pots -->
+
             <cavePlant>true</cavePlant> <!-- ?!? -->
             <growOptimalGlow/> <!-- so they don't die from each others' light...allows placing many in same room...good? -->
             <fertilityMin>0.01</fertilityMin>
@@ -34,8 +37,6 @@
             <growDays>20</growDays>
             <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays> <!-- roses and daylilies have this...? -->
             <dieIfLeafless>true</dieIfLeafless>
-            <visualSizeRange>0.5~0.9</visualSizeRange> <!-- also used in menu? -->
-            <maxMeshCount>1</maxMeshCount> <!-- this affects the number of things per square; e.g. haygrass has more than one "plant" visible when growing; roses have 1, go into pots -->
             <topWindExposure>0.03</topWindExposure>
             <purpose>Beauty</purpose>
         </plant>
