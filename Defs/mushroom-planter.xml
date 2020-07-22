@@ -1,4 +1,66 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- TODO: make planter that's like a slow, unpowered hydro, only for mushrooms -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>MushroomPlanter</defName>
+
+        <label>mushroom planter</label>
+        <description>A large trough filled with organic matter, for growing mushrooms.</description>
+
+        <graphicData>
+            <texPath>MushroomPlanterHay/MushroomPlanterHay</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,6)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <castEdgeShadows>true</castEdgeShadows>
+        <altitudeLayer>LowPlant</altitudeLayer>
+        <defaultPlacingRot>East</defaultPlacingRot>
+        <size>(2,6)</size>
+        <constructEffect>ConstructWood</constructEffect>
+
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <!--
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>600</costStuffCount>
+        -->
+        <costList>
+            <WoodLog>600</WoodLog>
+        </costList>
+        <canOverlapZones>false</canOverlapZones>
+        <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+<!--        <researchPrerequisites>-->
+<!--            <li>MushroomTODO</li>-->
+<!--        </researchPrerequisites>-->
+        <statBases>
+            <WorkToBuild>5000</WorkToBuild>
+
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <Cleanliness>-30</Cleanliness>
+        </statBases>
+        <thingClass>Building_PlantGrower</thingClass>
+        <fertility>1.0</fertility> <!-- hydro. is 2.8, soil is 1.0, mushrooms' min is 0.01 -->
+        <building>
+            <sowTag>MushroomPlanter</sowTag>
+            <defaultPlantToGrow>Glowstool</defaultPlantToGrow>
+            <buildingTags>
+                <li>Production</li> <!-- ?!? -->
+            </buildingTags>
+        </building>
+        <designationCategory>Production</designationCategory> <!-- ?!? -->
+        <passability>PassThroughOnly</passability>
+        <pathCost>80</pathCost>
+        <fillPercent>0.30</fillPercent> <!-- cover-effectiveness in combat? -->
+        <tickerType>Rare</tickerType> <!-- not sure what hydro. uses this for... -->
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+    </ThingDef>
 </Defs>

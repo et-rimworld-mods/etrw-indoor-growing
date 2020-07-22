@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[
+            defName="Glowstool" or
+            defName="Agarilux"
+            ]/plant/sowTags
+        </xpath>
+        <value>
+            <li>MushroomPlanter</li>
+        </value>
+    </Operation>
+</Patch>
