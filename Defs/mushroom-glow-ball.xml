@@ -7,7 +7,8 @@
             <texPath>GlowBallBlurredAndDark</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
-        <uiIconScale>2.0</uiIconScale>
+        <uiIconScale>1.45</uiIconScale>
+        <uiIconOffset>(0, 0.2)</uiIconOffset>
         <altitudeLayer>Item</altitudeLayer> <!-- so it's on top of the plant-pot -->
 
         <statBases>
@@ -30,7 +31,7 @@
             <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays> <!-- roses and daylilies have this...? -->
             <dieIfLeafless>true</dieIfLeafless>
             <visualSizeRange>0.5~0.9</visualSizeRange> <!-- also used in menu? -->
-            <maxMeshCount>1</maxMeshCount> <!-- this affects the number of things per square; e.g. haygrass has more than one "plant" visible when growing -->
+            <maxMeshCount>1</maxMeshCount> <!-- this affects the number of things per square; e.g. haygrass has more than one "plant" visible when growing; roses have 1, go into pots -->
             <topWindExposure>0.03</topWindExposure>
             <purpose>Beauty</purpose>
         </plant>
