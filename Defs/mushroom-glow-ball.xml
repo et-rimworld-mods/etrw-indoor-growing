@@ -24,6 +24,10 @@
             <growOptimalGlow/> <!-- so they don't die from each others' light...allows placing many in same room...good? -->
             <fertilityMin>0.01</fertilityMin>
             <fertilitySensitivity>0.0</fertilitySensitivity>
+            <sowMinSkill>3</sowMinSkill> <!-- like hops? strawberries are 5, but it's safe-food, healroot is 8, and devil is 10 -->
+            <sowResearchPrerequisites>
+                <li>GlowBalls</li>
+            </sowResearchPrerequisites>
             <sowTags>
                 <li>Decorative</li>
             </sowTags>

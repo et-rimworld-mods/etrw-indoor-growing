@@ -35,9 +35,9 @@
         </costList>
         <canOverlapZones>false</canOverlapZones>
         <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
-<!--        <researchPrerequisites>-->
-<!--            <li>MushroomTODO</li>-->
-<!--        </researchPrerequisites>-->
+        <researchPrerequisites>
+            <li>MushroomsEdibleBasic</li>
+        </researchPrerequisites>
         <statBases>
             <WorkToBuild>5000</WorkToBuild>
 
