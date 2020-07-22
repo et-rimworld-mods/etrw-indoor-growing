@@ -4,10 +4,12 @@
         <xpath>/Defs/ThingDef[
             defName="Glowstool" or
             defName="Agarilux"
-            ]/plant/sowTags
+            ]/plant
         </xpath>
         <value>
-            <li>MushroomPlanter</li>
+            <sowTags>
+                <li>MushroomPlanter</li>
+            </sowTags>
         </value>
     </Operation>
 </Patch>
