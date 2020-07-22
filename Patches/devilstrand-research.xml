@@ -17,7 +17,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ResearchProjectDef[defName="Devilstrand"]/researchViewY</xpath>
         <value>
-            <researchViewY>2</researchViewY>
+            <researchViewY>4</researchViewY>
         </value>
     </Operation>
 </Patch>

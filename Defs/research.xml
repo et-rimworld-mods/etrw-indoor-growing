@@ -35,14 +35,59 @@
 
 
     <ResearchProjectDef>
+        <defName>AestheticFungus</defName>
+        <label>aesthetic fungus</label>
+        <description>Preliminary work, to cultivate specialized aesthetic funguses in plant-pots.</description>
+        <tab>Fungi</tab>
+        <researchViewX>0</researchViewX>
+        <researchViewY>2</researchViewY>
+
+        <baseCost>400</baseCost>
+        <techLevel>Neolithic</techLevel>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
         <defName>GlowBalls</defName>
         <label>glow-balls</label>
         <description>Grow beautiful glowing fungi in pots!</description>
         <tab>Fungi</tab>
-        <researchViewX>0</researchViewX>
+        <researchViewX>1</researchViewX>
         <researchViewY>1</researchViewY>
 
-        <baseCost>600</baseCost>
+        <baseCost>400</baseCost>
         <techLevel>Neolithic</techLevel>
+        <prerequisites>
+            <li>AestheticFungus</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Deathwort</defName>
+        <label>deathwort</label>
+        <description>Vividly colored for war and death...</description>
+        <tab>Fungi</tab>
+        <researchViewX>1</researchViewX>
+        <researchViewY>2</researchViewY>
+
+        <baseCost>200</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <prerequisites>
+            <li>AestheticFungus</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>Rotwort</defName>
+        <label>rotwort</label>
+        <description>Like rotting flesh...</description>
+        <tab>Fungi</tab>
+        <researchViewX>1</researchViewX>
+        <researchViewY>3</researchViewY>
+
+        <baseCost>300</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <prerequisites>
+            <li>AestheticFungus</li>
+        </prerequisites>
     </ResearchProjectDef>
 </Defs>

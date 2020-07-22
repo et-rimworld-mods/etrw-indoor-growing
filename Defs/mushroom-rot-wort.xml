@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ETMushroomsBase">
+        <defName>Rotwort</defName>
+
+        <label>rotwort</label>
+        <description>A mushroom variant, cultivated specifically to smell and look like rotting flesh. For those people who want that sort of thing.</description>
+
+        <graphicData>
+            <texPath>Things/Plant/Glowstool</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+
+            <!-- like corpse-bile, although that can stack multiple per tile, so... -->
+            <Beauty>-50</Beauty>
+            <Cleanliness>-20</Cleanliness>
+
+            <!-- grave is 0.06, sarcoph. 0.1, full grave/sarcoph. +0.1, related grave/sarcoph. +0.1 -->
+            <MeditationFocusStrength>0.05</MeditationFocusStrength>
+        </statBases>
+        <pathCost>7</pathCost>
+        <plant>
+            <visualSizeRange>0.4~0.7</visualSizeRange>
+            <maxMeshCount>1</maxMeshCount>
+
+            <sowResearchPrerequisites>
+                <li>Rotwort</li>
+            </sowResearchPrerequisites>
+            <sowMinSkill>4</sowMinSkill> <!-- hops is 3 (beer), strawberries are 5 for safe-food -->
+            <sowTags>
+                <li>Decorative</li>
+            </sowTags>
+            <fertilityMin>0.01</fertilityMin>
+            <fertilitySensitivity>0.0</fertilitySensitivity>
+            <growDays>20</growDays>
+            <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays> <!-- roses and daylilies have this...? -->
+            <topWindExposure>0.03</topWindExposure>
+            <purpose>Beauty</purpose>
+        </plant>
+        <comps>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Morbid</li>
+                </focusTypes>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

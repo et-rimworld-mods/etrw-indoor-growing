@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ETMushroomsBase">
+        <defName>Rotwort</defName>
+
+        <label>rotwort</label>
+        <description>A mushroom variant, cultivated for vivid blacks and reds, reminding the viewer of death and war. For those people who want that sort of thing.</description>
+
+        <graphicData>
+            <texPath>Things/Plant/Glowstool</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>5</Beauty>
+
+            <!-- grave is 0.06, sarcoph. 0.1, full grave/sarcoph. +0.1, related grave/sarcoph. +0.1 -->
+            <MeditationFocusStrength>0.02</MeditationFocusStrength>
+        </statBases>
+        <pathCost>7</pathCost>
+        <plant>
+            <visualSizeRange>0.4~0.7</visualSizeRange>
+            <maxMeshCount>1</maxMeshCount>
+
+            <sowResearchPrerequisites>
+                <li>Deathwort</li>
+            </sowResearchPrerequisites>
+            <sowTags>
+                <li>Decorative</li>
+            </sowTags>
+            <fertilityMin>0.01</fertilityMin>
+            <fertilitySensitivity>0.0</fertilitySensitivity>
+            <growDays>20</growDays>
+            <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays> <!-- roses and daylilies have this...? -->
+            <topWindExposure>0.03</topWindExposure>
+            <purpose>Beauty</purpose>
+        </plant>
+        <comps>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Morbid</li>
+                </focusTypes>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>
