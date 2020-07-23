@@ -21,7 +21,6 @@
         <altitudeLayer>LowPlant</altitudeLayer>
         <defaultPlacingRot>East</defaultPlacingRot>
         <size>(2,6)</size>
-        <constructEffect>ConstructWood</constructEffect>
 
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <stuffCategories>
