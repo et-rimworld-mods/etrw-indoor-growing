@@ -47,6 +47,8 @@
             - 0 means they all add glow
             - higher than about 50 makes the glows start over-writing other colors
             - about 200 will be solid your-color, obliterating other sprite-colors?
+
+    radii: standing lamp 12, natural glow-shrooms 10
     -->
     <ThingDef ParentName="GlowBallBase">
         <defName>GlowBallRed</defName>
@@ -55,8 +57,8 @@
 
         <comps>
             <li Class="CompProperties_Glower">
-                <glowRadius>3</glowRadius>
-                <glowColor>(1000, 0, 0, 0)</glowColor>
+                <glowRadius>8</glowRadius>
+                <glowColor>(50, 0, 0, 0)</glowColor>
             </li>
         </comps>
     </ThingDef>
@@ -68,8 +70,8 @@
 
         <comps>
             <li Class="CompProperties_Glower">
-                <glowRadius>3</glowRadius>
-                <glowColor>(0, 1000, 0, 0)</glowColor>
+                <glowRadius>8</glowRadius>
+                <glowColor>(0, 50, 0, 0)</glowColor>
             </li>
         </comps>
     </ThingDef>
@@ -81,8 +83,8 @@
 
         <comps>
             <li Class="CompProperties_Glower">
-                <glowRadius>3</glowRadius>
-                <glowColor>(0, 0, 1000, 0)</glowColor>
+                <glowRadius>8</glowRadius>
+                <glowColor>(0, 0, 50, 0)</glowColor>
             </li>
         </comps>
     </ThingDef>

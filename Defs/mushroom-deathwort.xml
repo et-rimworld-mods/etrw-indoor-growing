@@ -10,6 +10,7 @@
             <texPath>Things/Plant/Glowstool</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
+        <altitudeLayer>Item</altitudeLayer> <!-- so it's on top of the plant-pot -->
 
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
